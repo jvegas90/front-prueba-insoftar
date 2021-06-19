@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 const routes: Routes = [
   {
     path: 'form',
@@ -8,9 +7,9 @@ const routes: Routes = [
       .then(m => m.FormModule),
   },
   {
-    path: 'edituser',
-    loadChildren: () => import('./home/edituser/edituser.module')
-      .then(m => m.EdituserModule),
+    path: 'edit/:id',
+    loadChildren: () => import('./home/form/form.module')
+      .then(m => m.FormModule),
   },
   {
     path: 'listuser',

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormComponent } from './form.component';
 import { FormRoutingModule } from './form-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,8 @@ import { FormRoutingModule } from './form-routing.module';
   imports: [    
     FormRoutingModule,
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule
     
    
   ],
